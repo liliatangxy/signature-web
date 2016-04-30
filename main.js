@@ -4,7 +4,7 @@ function myFunction()
 {
 	var name = $('#input-name').val();
 	myvar = window.setInterval(login, 500);
-	
+
 }
 
 function login()
@@ -18,7 +18,7 @@ function login()
         }
         else
         {
-        	window.location.href = "http://troll.com"
+        	window.location.href = "secure.html"
         	console.log("i am now logged in ");
         	clearInterval(myvar);
         }
