@@ -14,13 +14,17 @@ function login()
         console.log("im back bby" + result);
         if(result == "false")
         {
-            alertify.alert("Message");
+
         }
-        else
+        else if(result == "true")
         {
         	window.location.href = "secure.html"
         	console.log("i am now logged in ");
         	clearInterval(myvar);
+        }
+        else
+        {
+            swal({title: "Error!",   text: "Incorrect signature for " + name,   type: "error",   confirmButtonText: "Cool" });
         }
     });
 
