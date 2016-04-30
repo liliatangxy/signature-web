@@ -23,23 +23,34 @@
     <![endif]-->
   </head>
   <body>
+  <navbar>
+
+  </navbar>
     <div class="container">
-      <div class="header">
-        <h1> Sine Signature</h1>
-        <!-- <form> -->
+        <h1 id="same"> Sine Signature</h1>
+        <h3 id="same2"> How are you doing? </h3>
+        <p id="same3"> Please login ;) 可愛いです </p>
+        <center>
           <div class="form-group">
-            <label for="input-email">Name</label>
-            <input type="text" class="form-control" id="input-name" placeholder="Name">
+            <input type="text" class="form-control"  autocomplete="off" id="input-name">
+            <span class="typed-cursor" id="cursor"></span>
           </div>
           <!-- <div class="form-group">
             <label for="input-password">Password</label>
             <input type="password" class="form-control" id="input-password" placeholder="Password">
           </div> -->
-        </div>
-        <button onclick="myFunction()" class="btn btn-default">Submit</button>
+        <button id="submit" onclick="myFunction()" class="btn btn-default">Submit</button>
+      </center>
       <!-- </form> -->
       </div>
     </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
+  <script>
+  setInterval(document.getElementById("cursor").style.opacity = "1.0"); }, 1000;
+  setInterval(document.getElementById("cursor").style.opacity = "0");},1000;
+document.getElementById("cursor").style.opacity = "1.0";
+document.getElementById("cursor").style.opacity = "1.0";
+</script>
+
 </html>
