@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="main.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
     <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
     <title>Signature</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,22 +26,20 @@
     <div class="container">
       <div class="header">
         <h1> Sine Signature</h1>
-        <form>
+        <!-- <form> -->
           <div class="form-group">
-            <label for="input-email">Email</label>
-            <input type="email" class="form-control" id="input-email" placeholder="Email">
+            <label for="input-email">Name</label>
+            <input type="text" class="form-control" id="input-name" placeholder="Name">
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="input-password">Password</label>
             <input type="password" class="form-control" id="input-password" placeholder="Password">
-          </div>
+          </div> -->
         </div>
-        <button class="btn btn-default">Submit</button>
-      </form>
+        <button onclick="myFunction()" class="btn btn-default">Submit</button>
+      <!-- </form> -->
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"></script></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
