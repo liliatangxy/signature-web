@@ -8,14 +8,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> -->
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"/> -->
-  <link rel="stylesheet" type="text/css" href="./main.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'> 
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet'type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'>
    <!-- <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script> -->
    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-
-  <script type="text/javascript" src="server.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 <style>
 .nav {
 transition-duration: .5s;
@@ -37,42 +35,67 @@ body{
 
 </head>
 <body>
-
   <section>
     <div class="container-fluid full-page col-sm-4" style="margin-left:-15px; height:100%;">
     	<div class="" style="background-color:#222; width:100%; height:100%; overflow-y:auto;">
         <div id="same">
     		    <div style="width:70%; text-align:center; display:inline-block;">
-    			    <h4 style="font-size:30px; color:#4B98C6">Course name</h4>
-    			    <h4 style="font-size:20px; color:#4B98C6"> Instructor </h4>
+    			    <h4 style="font-size:30px; color:#4B98C6" id="trollusername">
+    			    name
+    			    <script>
+					</script>
+    			    </h4>
     		    </div>
     		    <div style="width:30%; float:right; padding-top:8%;">
        	      <img src="troll.jpg" style="height:50px; border-radius:50px;">
     		    </div>
     		    <div>
     		  <hr>
-              <p style="font-size:20px; color:white;" onclick="kevin1()">Kevin_Frans</p>
+              <p style="font-size:20px; color:white;" id="kevin1">Kevin_Frans</p>
               <hr>
             </div>
             <div>
-              <p style="font-size:20px;color:white;" onclick="kevin2()"> Kevin_Fang</p>
+              <p style="font-size:20px;color:white;" id="kevin2"> Kevin_Fang</p>
               <hr>
             </div>
             <div>
-              <p style="font-size:20px;color:white;" onclick="michael()"> Michael_Huang</p>
+              <p style="font-size:20px;color:white;" id="michael"> Michael_Huang</p>
               <hr>
             </div>
             <div>
-              <p style="font-size:20px;color:white;" onclick="Lilia()"> Lilia_Tang</p>
+              <p style="font-size:20px;color:white;" id="lilia"> Lilia_Tang</p>
               <hr>
            	</div>
     		</div>
     	</div>
+  
 
         <script type='text/javascript'>
+
+
+document.getElementById("trollusername").innerHTMl = name;
+
       		vvpw = $(window).width();
       		vph = $(window).height();
       		$('.full-page').height(vph);
+    	</script>
+    	<script>
+    	        
+        if(name = document.getElementById("kevin1")){
+        	document.getElementById("kevin1").style.font-style = "bold";
+        }
+        else if(name = document.getElementById("kevin2")){
+			document.getElementById("kevin2").style.font-style = "bold";
+        }
+        else if(name = document.getElementById("michael")){
+        	document.getElementById("michael").style.font-style = "bold";
+        }
+        else if(name = document.getElementById("lilia")){
+        	document.getElementById("lilia").style.font-style = "bold";
+        }
+        else{
+        	console.log("same");
+        }
     	</script>
     </div>
   </section>
@@ -93,6 +116,9 @@ LISTEN TO ME YOU LITTLE SHIT JUST DAMN LISTEN YOU CUNT I AM YOUR HELL .YOU GOD F
 </td>
 </table>
 
+<script>
+document.getElementById("trollusername").innerHTMl = name;
+</script>
 
 </body>
  

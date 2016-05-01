@@ -3,6 +3,7 @@ var name;
 
 function myFunction()
 {
+
 	name = $('#input-name').val();
 	myvar = window.setInterval(login, 500);
     $("#login").fadeOut("normal", function() {
@@ -12,7 +13,7 @@ function myFunction()
         $(this).html("<br>"+name+",<br>Please sign using your phone to login");
         $(this).fadeIn("normal");
     });
-
+    console.log(name);
 }
 
 function login()
