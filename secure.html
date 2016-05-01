@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Kappa</title>
+	<title>Secure Profile</title>
 
 <!-- 	<link rel="apple-touch-icon" sizes="57x57" href="favicon_imgs/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon_imgs/apple-icon-60x60.png">
@@ -23,44 +23,10 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<style>
-		body { padding-top:0px; word-wrap:break-word;   overflow-x:hidden;  overflow-y:hidden;}
-		.form-control {
-			border: 1px solid black;
-			border-radius: initial !important;
-
-		}
-
-		.btn-submit {
-			border: 1px solid black;
-			color: black;
-			border-radius: initial !important;
-			background-color: transparent;
-		}
-		.btn-submit:hover, .btn-submit:focus {
-			border-color: black;
-			/*background-color: rgb(221, 221, 221);*/
-			color: black;
-		}
-		.well#updates{
-			background-color:#0aa;
-		}
-		.well#materials{
-			background-color:#a9a;
-		}
-		.page-header{
-			padding-top:-5%;
-		}
-	</style>
+	<link rel="stylesheet" href="css/secure.css"
 </head>
 <body>
 <div class="container">
-<script>
-
-</script>
-
-
-
 	<div class="page-header text-center">
 		<h1><span class="fa fa-anchor"></span> Secure Profile</h1>
 		<a href="index.html" class="btn btn-default btn-sm">Logout</a>
@@ -68,40 +34,26 @@
 
 	<div class="row" onclick = "same2()">
 		<div class="col-sm-6" id="updates">
-			<div class="well" id="updates">
-				<h3><span class="fa fa-user"></span> Updates!</h3>
-					Congrats you have logged in. you did it
-			</div>
-    	</div>
-		<div class="col-sm-6" id="materials">
-			<div class="well" id="materials">
-				<h3><span class="fa fa-user"></span> Materials</h3>
-				    Your course bs
-			</div>
-		</div>
-	</div>
-	</button>
-		<div class="row">
-		<div class="col-sm-6" id="updates">
-			<div class="well" id="updates">
-				<h3><span class="fa fa-user"></span> Updates!</h3>
-					Congrats you have logged in. you did it
-			</div>
-    	</div>
-		<div class="col-sm-6" id="materials">
-			<div class="well" id="materials">
-				<h3><span class="fa fa-user"></span> Materials</h3>
-				    Your course bs
+			<button type="button" class="btn btn-block btn-updates" data-toggle="modal" data-target="#modaltroll">
+				<div class="well" id="updates">
+					<h3><span class="fa fa-user"></span> Updates!</h3>
+						Congrats you have logged in. you did it
+				</div>
+			</button>
+    </div>
+		<div class="modal fade" id="modaltroll" tabindex="-1" role="dialog">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="gridSystemModalLabel">Same</h4>
+					</div>
+					<div class="modal-body">
+						<p>troll</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-		<div class="row">
-		<div class="col-sm-6" id="updates">
-			<div class="well" id="updates">
-				<h3><span class="fa fa-user"></span> Updates!</h3>
-					Congrats you have logged in. you did it
-			</div>
-    	</div>
 		<div class="col-sm-6" id="materials">
 			<div class="well" id="materials">
 				<h3><span class="fa fa-user"></span> Materials</h3>
@@ -115,7 +67,7 @@
 				<h3><span class="fa fa-user"></span> Updates!</h3>
 					Congrats you have logged in. you did it
 			</div>
-    	</div>
+    </div>
 		<div class="col-sm-6" id="materials">
 			<div class="well" id="materials">
 				<h3><span class="fa fa-user"></span> Materials</h3>
@@ -123,9 +75,34 @@
 			</div>
 		</div>
 	</div>
-
-
-
+	<div class="row">
+		<div class="col-sm-6" id="updates">
+			<div class="well" id="updates">
+				<h3><span class="fa fa-user"></span> Updates!</h3>
+					Congrats you have logged in. you did it
+			</div>
+    </div>
+		<div class="col-sm-6" id="materials">
+			<div class="well" id="materials">
+				<h3><span class="fa fa-user"></span> Materials</h3>
+				    Your course bs
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6" id="updates">
+			<div class="well" id="updates">
+				<h3><span class="fa fa-user"></span> Updates!</h3>
+					Congrats you have logged in. you did it
+			</div>
+  	</div>
+		<div class="col-sm-6" id="materials">
+			<div class="well" id="materials">
+				<h3><span class="fa fa-user"></span> Materials</h3>
+				    Your course bs
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
