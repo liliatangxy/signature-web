@@ -1,35 +1,15 @@
-body {
-  padding-top:0px;
-  word-wrap:break-word;
-  overflow-x:hidden;
-  overflow-y:hidden;
+.nav {
+transition-duration: .5s;
+}
+button#logout{
+  background-color:transparent;
+  color:#fff;
+  width:100%;
+  border-radius:10px;
 }
 
-.form-control {
-  border: 1px solid black;
-  border-radius: initial !important;
-
-}
-
-.btn-submit {
-  border: 1px solid black;
-  color: black;
-  border-radius: initial !important;
-  background-color: transparent;
-}
-.btn-submit:hover, .btn-submit:focus {
-  border-color: black;
-  /*background-color: rgb(221, 221, 221);*/
-  color: black;
-}
-
-.well#updates{
-  background-color: #3498db;
-  background-size: 100%;
-}
-.well#materials{
-  background-color: #9b59b6;
-}
-.page-header{
-  padding-top:-5%;
+body{
+	font-family: 'Helvetica Neue', black;
+	overflow-y:hidden;
+	margin-top:-20px;
 }
