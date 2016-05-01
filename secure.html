@@ -2,6 +2,7 @@
 <!doctype html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<title>Secure Profile</title>
 
 <!-- 	<link rel="apple-touch-icon" sizes="57x57" href="favicon_imgs/apple-icon-57x57.png">
@@ -28,7 +29,7 @@
 <body>
 <div class="container">
 	<div class="page-header text-center">
-		<h1><span class="fa fa-anchor"></span> Secure Profile</h1>
+		<h1><span class="fa fa-anchor"></span> <div id="titless">Secure Profile</div></h1>
 		<a href="index.html" class="btn btn-default btn-sm">Logout</a>
 	</div>
 
@@ -105,4 +106,28 @@
 	</div>
 </div>
 </body>
+
+<script>
+  function getQueryParams(qs) {
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+  }
+
+  $(document).ready(function() {
+    var query = getQueryParams(document.location.search);
+    console.log(query);
+    $("#titless").html(query.name)
+  });
+
+</script>
+
 </html>

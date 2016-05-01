@@ -26,7 +26,7 @@ function login()
         }
         else if(result == "true")
         {
-        	window.location.href = "secure.html"
+        	window.location.href = "secure.html?name="+name
         	console.log("i am now logged in ");
         	clearInterval(myvar);
         }
