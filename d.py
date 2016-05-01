@@ -1,15 +1,19 @@
-var express = require('express');
-var app = require('express')();
-var server = require('http').Server(app);
+from bottle import route, run, template, static_file, get, post, request
+import os
+import subprocess
 
-server.listen(8000);
+from bottle import static_file
+@route('/static/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root=os.path.join(os.path.dirname(__file__), 'static'))
 
-app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
-});
-
-app.use(express.static(__dirname + "")); //use static files in ROOT/public folder
-app.use(express.static('public'));
+import sendRest2Racm
 
 
+@get('/beep')
+def light():
+    print 'beep'
+    sendRest2Racm.main()
+    return 'trolled'
 
+run(host='localhost', port=8080)
